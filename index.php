@@ -12,6 +12,7 @@
     <!-- SWIPER JS END -->
 
 <style>
+ @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,400;1,500&display=swap');
     .availability-form{
       margin-top: -50px;
       z-index: 2;
@@ -24,33 +25,95 @@
       padding: 0 35px;
     }
     }
+    .card{
+        word-spacing: 5px;
+        }
+
+        .swiper-slide .title {
+        bottom: 0px;
+        float: left;
+        position: absolute;
+        width: 100%;
+        z-index: 9999;
+        font-size: 0.75em;
+        margin-bottom: 20px;
+        line-height: 100%;
+        
+     
+        
+    }
+
+    #title{
+      
+        font-size: 30px;
+        font-weight:900;
+        font-family: 'Work Sans', sans-serif;
+        padding-left:2%;
+    }
+
+  .title
+  {
+   
+  background-image: linear-gradient(
+    -225deg,
+    #ffffff 0%,
+    #ffffff 29%,
+    #9000ff 67%,
+    #ffffff 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #ffffff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 8s linear infinite;
+  display: inline-block;
+      font-size: 190px;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
 </style>
 </head>
 <body style="background-image: linear-gradient(135deg, #f5f7fa 0%, #d6d9ff 100%);">
 
 <?php require('inc/header.php'); ?>
 
+
 <!-- CAROUSEL START -->
 <div class="container-fluid px-lg-4 mt-4">
-  <div class="swiper swiper-container">
-    <div class="swiper-wrapper">
+  <div class="swiper swiper-container shadow">
+    <div class="swiper-wrapper ">
       <div class="swiper-slide">
         <img src="images/carousel/1.png" class="w-100 d-block">
+        <div class="title" id="title">REAL <br>ESTATE <br> NASHIK</div>
       </div>
       <div class="swiper-slide">
         <img src="images/carousel/2.png" class="w-100 d-block">
+        <div class="title" id="title">REAL <br>ESTATE <br> NASHIK</div>
       </div>
       <div class="swiper-slide">
         <img src="images/carousel/3.png" class="w-100 d-block">
+        <div class="title" id="title">REAL <br>ESTATE <br> NASHIK</div>
       </div>
       <div class="swiper-slide">
         <img src="images/carousel/4.png" class="w-100 d-block">
+        <div class="title" id="title">REAL <br>ESTATE <br> NASHIK</div>
       </div>
       <div class="swiper-slide">
         <img src="images/carousel/5.png" class="w-100 d-block">
+        <div class="title" id="title">REAL <br>ESTATE <br> NASHIK</div>
       </div>
       <div class="swiper-slide">
         <img src="images/carousel/6.png" class="w-100 d-block">
+        <div class="title" id="title">REAL <br>ESTATE <br> NASHIK</div>
       </div>
     </div>
   </div>
@@ -58,50 +121,11 @@
 <!-- CAROUSEL END -->
 
 <!-- CHECK AVAILABILITY FORM START-->
-<div class="container availability-form">
-  <div class="row">
-    <div class="col-lg-12 bg-white shadow p-4 rounded">
-      <h5 class="mb-4">Check House Availability</h5>
-        <form>
-          <div class="row align-items-end">
-            <!-- <div class="col-lg-3 mb-3">
-              <label class="form-label" style="font-weight: 500;">Select the date for house Allotment</label>
-              <input type="date" class="form-control shadow-none">
-            </div> -->
-            <div class="col-lg-6 mb-3">
-            <label class="form-label" style="font-weight: 500;">House type</label>
-            <select class="form-select shadow-none">
-              <option value="1">1 bhk</option>
-              <option value="2">2 bhk</option>
-              <option value="3">3 bhk</option>
-              <option value="3">4 bhk</option>
-              <option value="3">5 bhk</option>
-            </select>
-            </div>
-            <div class="col-lg-6 mb-3">
-              <label class="form-label" style="font-weight: 500;">Top Localities in Nashik</label>
-              <select class="form-select shadow-none">
-                <option value="1">Pathardi Phata</option>
-                <option value="2">Gangapur road</option>
-                <option value="3">Igatpuri</option>
-                <option value="3">Deolali Camp</option>
-                <option value="3">Panchavati</option>
-                <option value="3">Ozar</option>
-                
-              </select>
-              </div>
-            <div class="text-center">
-              <button type="submit" class="btn text-white shadow-none custom-bg">Submit</button>
-            </div>
 
-          </div>
-        </form>
-    </div>
-  </div>
-</div>
 <!-- CHECK AVAILABILITY FORM END-->
 
 <!-- OUR TOP PROPERTY COLLECTIONS FOR YOU -->
+
 <h2 class="mt-5 pt-4 mb-4 text-center fw-bold h-font">OUR TOP PROPERTY COLLECTIONS FOR YOU</h2>
 <div class="container">
   <div class="row">
@@ -125,8 +149,8 @@
           </div>
           <div>
             <div class="d-flex justify-content-evenly mb-2">
-              <a href="#" class="btn btn-sm text-white custom-bg shadow-none">Contact us</a>
-              <a href="#" class="btn btn-sm btn-outline-dark shadow-none">More details</a>    
+              <a href="contact.php" class="btn btn-sm text-white custom-bg shadow-none">Contact us</a>
+              <a href="properties.php" class="btn btn-sm btn-outline-dark shadow-none">More details</a>    
             </div>
           </div>
         </div>
@@ -153,8 +177,8 @@
           </div>
           <div>
             <div class="d-flex justify-content-evenly mb-2">
-              <a href="#" class="btn btn-sm text-white custom-bg shadow-none">Contact us</a>
-              <a href="#" class="btn btn-sm btn-outline-dark shadow-none">More details</a>    
+              <a href="contact.php" class="btn btn-sm text-white custom-bg shadow-none">Contact us</a>
+              <a href="properties.php" class="btn btn-sm btn-outline-dark shadow-none">More details</a>    
             </div>
           </div>
         </div>
@@ -181,8 +205,8 @@
           </div>
           <div>
             <div class="d-flex justify-content-evenly mb-2">
-              <a href="#" class="btn btn-sm text-white custom-bg shadow-none">Contact us</a>
-              <a href="#" class="btn btn-sm btn-outline-dark shadow-none">More details</a>    
+              <a href="contact.php" class="btn btn-sm text-white custom-bg shadow-none">Contact us</a>
+              <a href="properties.php" class="btn btn-sm btn-outline-dark shadow-none">More details</a>    
             </div>
           </div>
         </div>
@@ -190,7 +214,7 @@
     </div>
 
     <div class="col-lg-12 text-center mt-5 my-3">
-      <a href="#" class="btn btn-sm btn-outline-dark rounded-0 fw-bold shadow-none">More Properties >>></a>
+      <a href="properties.php" class="btn btn-sm btn-outline-dark rounded-0 fw-bold shadow-none">More Properties >>></a>
     </div>
   </div>
 </div>
@@ -255,7 +279,7 @@
     <div class="swiper-pagination"></div>
   </div>
   <div class="col-lg-12 text-center mt-5">
-    <a href="#" class="btn btn-outline-dark rounded-0 fw-bold shadow-none">Know more>>></a>
+    <a href="about.php" class="btn btn-outline-dark rounded-0 fw-bold shadow-none">Know more>>></a>
   </div>
 </div>
 <!-- TESTIMONIALS END -->
@@ -280,19 +304,19 @@
       </div>
       <div class="bg-white p-4 rounded mb-4">
         <h5>Follow us</h5>
-        <a href="#" class="d-inline-block mb-3">
+        <a href="https://twitter.com/home" class="d-inline-block mb-3">
           <span class="badge bg-light text-dark fs-6 p-2">
             <i class="bi bi-twitter me-1"></i>Twitter
           </span>
         </a>
         <br>
-        <a href="#" class="d-inline-block mb-3">
+        <a href="https://www.facebook.com/facebook/" class="d-inline-block mb-3">
           <span class="badge bg-light text-dark fs-6 p-2">
             <i class="bi bi-facebook me-1"></i>Facebook
           </span>
         </a>
         <br>
-        <a href="#" class="d-inline-block">
+        <a href="https://www.instagram.com/" class="d-inline-block">
           <span class="badge bg-light text-dark fs-6 p-2">
             <i class="bi bi-instagram me-1"></i>Instagram
           </span>
